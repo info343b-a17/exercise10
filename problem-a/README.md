@@ -38,6 +38,8 @@ Note: these instructions mostly mirror the tutorial found in the [official Redux
     - `toggleTask()` should take in a task id number and return an object with a `type` of `TOGGLE_TASK` and a `taskId` of which task to toggle.
     - `toggleShowCurrent()` should return an object with the appropriate `type` (no extra properties are needed).
 
+    **Note** you can use `import * as Actions ...` in order to easily import all of the action creators, allowing you to refer to each as e.g., `Action.addTask()`.
+
 3. Once you have Actions defined, you can begin defining the Redux store that will respond to those actions. A Redux store is defined by its [**Reducer**](https://redux.js.org/docs/basics/Reducers.html) function, which specifies how it will change state based on an action. Create a new file module **`src/reducers.js`** to define this reducer.
 
     Your file should define **two** reducer functions (you will need to `import` the Action constants you defined in `actions.js`):
