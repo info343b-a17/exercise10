@@ -49,7 +49,7 @@ class App extends Component {
         <TaskList
           tasks={this.state.tasks}
           showOnlyCurrent={this.state.showOnlyCurrent}
-          toggleCallback={(taskId) => {this.toggleFinished(taskId)}}
+          toggleFinishedCallback={(taskId) => {this.toggleFinished(taskId)}}
           />
         <AddTaskForm addTaskCallback={(descr) => {this.addTask(descr)}} />
         <button 
