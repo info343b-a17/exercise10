@@ -1,12 +1,13 @@
 {
-  "name": "exercise-07",
+  "name": "exercise-10",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "test": "jest"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "aphrodite": "^1.2.5",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
@@ -26,7 +27,9 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
-    "jest-css-modules": "^1.1.0"
+    "jest-css-modules": "^1.1.0",
+    "react-router": "^4.2.0",
+    "redux-testkit": "^1.0.6"
   },
   "babel": {
     "presets": [
@@ -68,7 +71,8 @@
       ],
       "camelcase": [
         "error"
-      ]
+      ],
+      "no-case-declarations": "off"
     }
   }
 }
